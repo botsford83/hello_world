@@ -2,111 +2,115 @@ const mock20JokeResponse = {
   "type": "success",
   "value": [
     {
-      "id": 86,
-      "joke":
-          "Wilt Chamberlain claims to have slept with more than 20,000 women in his lifetime. Chuck Norris calls this &quot;a slow Tuesday.&quot;",
-      "categories": []
-    },
-    {
-      "id": 21,
-      "joke": "Chuck Norris doesn't shower, he only takes blood baths.",
-      "categories": []
-    },
-    {
-      "id": 488,
-      "joke": "Chuck Norris doesn't pair program.",
+      "id": 467,
+      "joke": "Chuck Norris can delete the Recycling Bin.",
       "categories": ["nerdy"]
     },
     {
-      "id": 114,
-      "joke": "Chuck Norris doesn't believe in Germany.",
-      "categories": []
-    },
-    {"id": 272, "joke": "Chuck Norris can taste lies.", "categories": []},
-    {
-      "id": 226,
-      "joke":
-          "&quot;Brokeback Mountain&quot; is not just a movie. It's also what Chuck Norris calls the pile of dead ninjas in his front yard.",
-      "categories": []
-    },
-    {
-      "id": 326,
-      "joke":
-          "As an infant, Chuck Norris' parents gave him a toy hammer. He gave the world Stonehenge.",
-      "categories": []
-    },
-    {
-      "id": 614,
-      "joke": "Chuck Norris once sold eBay to eBay on eBay.",
-      "categories": []
-    },
-    {
-      "id": 259,
-      "joke": "When Chuck Norris does division, there are no remainders.",
-      "categories": []
-    },
-    {
-      "id": 126,
-      "joke":
-          "When Chuck Norris does a pushup, he isn't lifting himself up, he's pushing the Earth down.",
-      "categories": []
-    },
-    {
-      "id": 588,
-      "joke": "Chuck Norris knows Victoria's secret.",
-      "categories": []
-    },
-    {
-      "id": 65,
-      "joke":
-          "When Chuck Norris was denied an Egg McMuffin at McDonald's because it was 10:35, he roundhouse kicked the store so hard it became a Wendy's.",
-      "categories": []
-    },
-    {
-      "id": 442,
-      "joke":
-          "Everything King Midas touches turnes to gold. Everything Chuck Norris touches turns up dead.",
-      "categories": []
-    },
-    {
-      "id": 480,
-      "joke": "The class object inherits from Chuck Norris",
+      "id": 459,
+      "joke": "Chuck Norris can solve the Towers of Hanoi in one move.",
       "categories": ["nerdy"]
     },
     {
-      "id": 475,
+      "id": 466,
       "joke":
-          "Chuck Norris doesn't need sudo, he just types &quot;Chuck Norris&quot; before his commands.",
+          "Chuck Norris doesn't do Burn Down charts, he does Smack Down charts.",
       "categories": ["nerdy"]
     },
     {
-      "id": 422,
-      "joke": "Mr. T pities the fool. Chuck Norris rips the fool's head off.",
-      "categories": []
+      "id": 496,
+      "joke": "Chuck Norris went out of an infinite loop.",
+      "categories": ["nerdy"]
     },
     {
-      "id": 145,
+      "id": 503,
       "joke":
-          "Chuck Norris is currently suing myspace for taking the name of what he calls everything around you.",
-      "categories": []
+          "Chuck Norris protocol design method has no status, requests or responses, only commands.",
+      "categories": ["nerdy"]
     },
     {
-      "id": 294,
+      "id": 505,
       "joke":
-          "Jean-Claude Van Damme once kicked Chuck Norris' ass. He was then awakened from his dream by a roundhouse kick to the face.",
-      "categories": []
+          "Chuck Norris can spawn threads that complete before they are started.",
+      "categories": ["nerdy"]
     },
     {
-      "id": 123,
-      "joke":
-          "Some people wear Superman pajamas. Superman wears Chuck Norris pajamas.",
-      "categories": []
+      "id": 5,
+      "joke": "Chuck Norris lost his virginity before his dad did.",
+      "categories": ["explicit"]
     },
     {
-      "id": 354,
+      "id": 510,
+      "joke": "Chuck Norris can compile syntax errors.",
+      "categories": ["nerdy"]
+    },
+    {
+      "id": 498,
+      "joke": "Chuck Norris hosting is 101% uptime guaranteed.",
+      "categories": ["nerdy"]
+    },
+    {
+      "id": 491,
       "joke":
-          "For undercover police work, Chuck Norris pins his badge underneath his shirt, directly into his chest.",
-      "categories": []
+          "Chuck Norris doesn't use reflection, reflection asks politely for his help.",
+      "categories": ["nerdy"]
+    },
+    {
+      "id": 463,
+      "joke":
+          "Chuck Norris doesn't use web standards as the web will conform to him.",
+      "categories": ["nerdy"]
+    },
+    {
+      "id": 566,
+      "joke":
+          "Chuck Norris could use anything in java.util.* to kill you, including the javadocs.",
+      "categories": ["nerdy"]
+    },
+    {
+      "id": 554,
+      "joke": "Chuck Norris can install a 64 bit OS on 32 bit machines.",
+      "categories": ["nerdy"]
+    },
+    {
+      "id": 1,
+      "joke":
+          "Chuck Norris uses ribbed condoms inside out, so he gets the pleasure.",
+      "categories": ["explicit"]
+    },
+    {
+      "id": 458,
+      "joke":
+          "Chuck Norris can write infinite recursion functions and have them return.",
+      "categories": ["nerdy"]
+    },
+    {
+      "id": 539,
+      "joke":
+          "Chuck Norris's database has only one table, 'Kick', which he DROPs frequently.",
+      "categories": ["nerdy"]
+    },
+    {
+      "id": 379,
+      "joke":
+          "Chuck Norris' penis is a third degree blackbelt, and an honorable 32nd-degree mason.",
+      "categories": ["explicit"]
+    },
+    {
+      "id": 565,
+      "joke": "Chuck Norris can make a class that is both abstract and final.",
+      "categories": ["nerdy"]
+    },
+    {
+      "id": 507,
+      "joke": "Chuck Norris can install iTunes without installing Quicktime.",
+      "categories": ["nerdy"]
+    },
+    {
+      "id": 229,
+      "joke":
+          "One day Chuck Norris walked down the street with a massive erection. There were no survivors.",
+      "categories": ["explicit"]
     }
   ]
 };
@@ -115,59 +119,64 @@ const mock11JokeResponse = {
   "type": "success",
   "value": [
     {
-      "id": 86,
-      "joke":
-          "Wilt Chamberlain claims to have slept with more than 20,000 women in his lifetime. Chuck Norris calls this &quot;a slow Tuesday.&quot;",
-      "categories": []
-    },
-    {
-      "id": 21,
-      "joke": "Chuck Norris doesn't shower, he only takes blood baths.",
-      "categories": []
-    },
-    {
-      "id": 488,
-      "joke": "Chuck Norris doesn't pair program.",
+      "id": 467,
+      "joke": "Chuck Norris can delete the Recycling Bin.",
       "categories": ["nerdy"]
     },
     {
-      "id": 114,
-      "joke": "Chuck Norris doesn't believe in Germany.",
-      "categories": []
+      "id": 459,
+      "joke": "Chuck Norris can solve the Towers of Hanoi in one move.",
+      "categories": ["nerdy"]
     },
-    {"id": 272, "joke": "Chuck Norris can taste lies.", "categories": []},
     {
-      "id": 226,
+      "id": 466,
       "joke":
-          "&quot;Brokeback Mountain&quot; is not just a movie. It's also what Chuck Norris calls the pile of dead ninjas in his front yard.",
-      "categories": []
+          "Chuck Norris doesn't do Burn Down charts, he does Smack Down charts.",
+      "categories": ["nerdy"]
     },
     {
-      "id": 326,
+      "id": 496,
+      "joke": "Chuck Norris went out of an infinite loop.",
+      "categories": ["nerdy"]
+    },
+    {
+      "id": 503,
       "joke":
-          "As an infant, Chuck Norris' parents gave him a toy hammer. He gave the world Stonehenge.",
-      "categories": []
+          "Chuck Norris protocol design method has no status, requests or responses, only commands.",
+      "categories": ["nerdy"]
     },
     {
-      "id": 614,
-      "joke": "Chuck Norris once sold eBay to eBay on eBay.",
-      "categories": []
-    },
-    {
-      "id": 259,
-      "joke": "When Chuck Norris does division, there are no remainders.",
-      "categories": []
-    },
-    {
-      "id": 126,
+      "id": 505,
       "joke":
-          "When Chuck Norris does a pushup, he isn't lifting himself up, he's pushing the Earth down.",
-      "categories": []
+          "Chuck Norris can spawn threads that complete before they are started.",
+      "categories": ["nerdy"]
     },
     {
-      "id": 588,
-      "joke": "Chuck Norris knows Victoria's secret.",
-      "categories": []
+      "id": 5,
+      "joke": "Chuck Norris lost his virginity before his dad did.",
+      "categories": ["explicit"]
     },
-  ]
+    {
+      "id": 510,
+      "joke": "Chuck Norris can compile syntax errors.",
+      "categories": ["nerdy"]
+    },
+    {
+      "id": 498,
+      "joke": "Chuck Norris hosting is 101% uptime guaranteed.",
+      "categories": ["nerdy"]
+    },
+    {
+      "id": 491,
+      "joke":
+          "Chuck Norris doesn't use reflection, reflection asks politely for his help.",
+      "categories": ["nerdy"]
+    },
+    {
+      "id": 463,
+      "joke":
+          "Chuck Norris doesn't use web standards as the web will conform to him.",
+      "categories": ["nerdy"]
+    },
+  ],
 };
