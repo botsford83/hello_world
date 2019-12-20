@@ -22,12 +22,11 @@ class JokeController {
 
   Client client = Client();
 
+  String categoryEndPoint = '?limitTo=[nerdy,explicit]';
+
   Future<Joke> getRandomJokes({@required int numberOfJokes}) async {
     final response = await client.get(
-      Constants.jokeApiUrl +
-          '/' +
-          numberOfJokes.toString() +
-          '?limitTo=[nerdy,explicit]',
+      Constants.jokeApiUrl + '/' + numberOfJokes.toString() + categoryEndPoint,
     );
 
     if (HttpStatusHelper.checkResponseStatus(response)) {
