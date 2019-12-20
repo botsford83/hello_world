@@ -17,6 +17,7 @@ class HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
+    // calling the future in the init eliminates the widget change of state causing another service call
     jokeFuture = JokeController().getRandomJokes(numberOfJokes: 20);
   }
 
@@ -75,6 +76,7 @@ class HomeScreenState extends State<HomeScreen> {
                       },
                     );
                   }
+                  // Easily able to display loading or error screens while future call is made
                   return Scaffold(
                     backgroundColor: Colors.white,
                     body: LoadingIndicator(),
