@@ -19,12 +19,12 @@ void main() {
   MockNavigatorObserver mockObserver;
   JokeController.instance = MockJokeController();
   _basicOkMock() {
-    when(JokeController().getRandomJokes())
+    when(JokeController().getRandomJokes(numberOfJokes: 20))
         .thenAnswer((_) => Future.value(Joke.fromMap(mock20JokeResponse)));
   }
 
   _basicBadMock() {
-    when(JokeController().getRandomJokes())
+    when(JokeController().getRandomJokes(numberOfJokes: 20))
         .thenAnswer((_) => Future.value(null));
   }
 

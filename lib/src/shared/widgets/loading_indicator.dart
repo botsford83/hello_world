@@ -23,7 +23,9 @@ class _LoadingIndicatorState extends State<LoadingIndicator> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: CircularProgressIndicator(backgroundColor: Colors.purple,),
+      child: CircularProgressIndicator(
+        backgroundColor: Colors.grey,
+      ),
     );
   }
 }

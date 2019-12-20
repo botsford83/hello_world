@@ -17,7 +17,7 @@ class HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-    jokeFuture = JokeController().getRandomJokes();
+    jokeFuture = JokeController().getRandomJokes(numberOfJokes: 20);
   }
 
   @override

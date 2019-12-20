@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: config.appName,
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.indigo, fontFamily: 'Nunito'),
+      theme: ThemeData(primarySwatch: Colors.purple, fontFamily: 'Nunito'),
       home: LoginScreen(),
       onGenerateRoute: (RouteSettings settings) {
         return CustomRouteSettings().fetchPageRoute(settings);
