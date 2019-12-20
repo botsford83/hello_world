@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:flutter/widgets.dart';
 import 'package:hello_world/src/models/joke.dart';
 import 'package:hello_world/src/shared/constants.dart';
 import 'package:hello_world/src/shared/http_status_helper.dart';
@@ -21,8 +22,11 @@ class JokeController {
 
   Client client = Client();
 
-  Future<Joke> getRandomJokes() async {
-    final response = await client.get(Constants.jokeApiUrl);
+  Future<Joke> getRandomJokes({@required int numberOfJokes}) async {
+    final response = await client.get(
+      Constants.jokeApiUrl + '/' + numberOfJokes.toString(),
+    );
+
     if (HttpStatusHelper.checkResponseStatus(response)) {
       return Joke.fromJson(response.body);
     } else {

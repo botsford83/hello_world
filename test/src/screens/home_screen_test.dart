@@ -20,7 +20,7 @@ void main() {
   JokeController.instance = MockJokeController();
   _basicOkMock() {
     when(JokeController().getRandomJokes())
-        .thenAnswer((_) => Future.value(Joke.fromMap(mockJokeResponse)));
+        .thenAnswer((_) => Future.value(Joke.fromMap(mock20JokeResponse)));
   }
 
   _basicBadMock() {

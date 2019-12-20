@@ -25,7 +25,7 @@ class Constants {
 
   // --*****************URLS*****************--
   static String mobileApiUrl;
-  static String jokeApiUrl = 'http://api.icndb.com/jokes/random/20';
+  static String jokeApiUrl = 'http://api.icndb.com/jokes/random';
 
 // --*****************Mock Constants*****************--
 }

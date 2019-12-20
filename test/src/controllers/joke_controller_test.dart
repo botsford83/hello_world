@@ -15,10 +15,18 @@ main() {
   group('Joke Controller: getRandomJokes()', () {
     test('gets 20 random jokes', () async {
       JokeController().client = MockClient((request) async {
-        return Response(json.encode(mockJokeResponse), HttpStatus.ok);
+        return Response(json.encode(mock20JokeResponse), HttpStatus.ok);
       });
-      final response = await JokeController().getRandomJokes();
+      final response = await JokeController().getRandomJokes(numberOfJokes: 20);
       expect(response.value.length, 20);
+    });
+
+    test('gets 11 random jokes', () async {
+      JokeController().client = MockClient((request) async {
+        return Response(json.encode(mock11JokeResponse), HttpStatus.ok);
+      });
+      final response = await JokeController().getRandomJokes(numberOfJokes: 11);
+      expect(response.value.length, 11);
     });
   });
 
@@ -28,7 +36,7 @@ main() {
         return Response(json.encode(null), HttpStatus.badRequest);
       });
 
-      final response = await JokeController().getRandomJokes();
+      final response = await JokeController().getRandomJokes(numberOfJokes: 1);
       expect(response, null);
     });
 
@@ -37,7 +45,7 @@ main() {
         return Response(json.encode(null), HttpStatus.unauthorized);
       });
 
-      final response = await JokeController().getRandomJokes();
+      final response = await JokeController().getRandomJokes(numberOfJokes: 1);
       expect(response, null);
     });
 
@@ -46,7 +54,7 @@ main() {
         return Response(json.encode(null), HttpStatus.paymentRequired);
       });
 
-      final response = await JokeController().getRandomJokes();
+      final response = await JokeController().getRandomJokes(numberOfJokes: 1);
       expect(response, null);
     });
 
@@ -55,7 +63,7 @@ main() {
         return Response(json.encode(null), HttpStatus.forbidden);
       });
 
-      final response = await JokeController().getRandomJokes();
+      final response = await JokeController().getRandomJokes(numberOfJokes: 1);
       expect(response, null);
     });
 
@@ -64,7 +72,7 @@ main() {
         return Response(json.encode(null), HttpStatus.notFound);
       });
 
-      final response = await JokeController().getRandomJokes();
+      final response = await JokeController().getRandomJokes(numberOfJokes: 1);
       expect(response, null);
     });
 
@@ -73,7 +81,7 @@ main() {
         return Response(json.encode(null), HttpStatus.methodNotAllowed);
       });
 
-      final response = await JokeController().getRandomJokes();
+      final response = await JokeController().getRandomJokes(numberOfJokes: 1);
       expect(response, null);
     });
 
@@ -82,7 +90,7 @@ main() {
         return Response(json.encode(null), HttpStatus.notAcceptable);
       });
 
-      final response = await JokeController().getRandomJokes();
+      final response = await JokeController().getRandomJokes(numberOfJokes: 1);
       expect(response, null);
     });
   });
