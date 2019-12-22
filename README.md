@@ -23,6 +23,9 @@ brew install lcov
 ```bash
 flutter test
 ```
+```bash
+flutter test --no-color test --machine test
+```
 
 #### Flutter test with coverage
 ```bash
