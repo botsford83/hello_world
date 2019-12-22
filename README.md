@@ -24,7 +24,7 @@ brew install lcov
 flutter test
 ```
 
-####Flutter test with coverage
+#### Flutter test with coverage
 ```bash
 flutter test --coverage
 genhtml coverage/lcov.info -o coverage/html
