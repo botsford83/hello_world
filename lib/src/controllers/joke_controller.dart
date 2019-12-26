@@ -22,7 +22,7 @@ class JokeController {
 
   Client client = Client();
 
-  String categoryEndPoint = '?limitTo=[nerdy,explicit]';
+  String categoryEndPoint = '?limitTo=[nerdy]';
 
   Future<Joke> getRandomJokes({@required int numberOfJokes}) async {
     final response = await client.get(
