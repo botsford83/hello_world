@@ -28,7 +28,10 @@ void main() {
     expect(find.byKey(Key('emailField')), findsOneWidget);
     expect(find.byKey(Key('passwordField')), findsOneWidget);
     expect(find.byKey(Key('forgotBtn')), findsOneWidget);
-    expect(find.byKey(Key('submitBtn')), findsOneWidget);
+    var submitBtn = find.byKey(Key('submitBtn'));
+    expect(submitBtn, findsOneWidget);
+    expect((submitBtn.evaluate().single.widget as RaisedButton).color,
+        Colors.purple);
     await tester.tap(find.byKey(Key('submitBtn')));
     await tester.pump();
     verify(mockObserver.didPush(any, any));
