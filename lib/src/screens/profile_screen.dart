@@ -20,7 +20,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   void initState() {
     super.initState();
-    pokemonFutureList = PokemonController().getMultiplePokemonById(pokemonIdNumber: 1, pokemonCount: 200);
+    pokemonFutureList = PokemonController().getMultiplePokemonById(pokemonIdNumber: 1, pokemonCount: 807);
   }
 
   @override
@@ -44,8 +44,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   builder: (BuildContext context, AsyncSnapshot snapshot) {
                     if (snapshot.hasData) {
                       List<Pokemon> pokemonList = snapshot.data;
-                      return SingleChildScrollView(
-                        //height: MediaQuery.of(context).size.height,
+                      return Expanded(
+                        //height: MediaQuery.of(context).size.height/1.3,
                         child: ListView.builder(
                           shrinkWrap: true,
                           scrollDirection: Axis.vertical,
